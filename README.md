@@ -64,5 +64,5 @@ This is what it looks like in the example:
 This is just a simulation of orbital motion. Can be used as a toy
 
 ### People
-[@tolikhalas][https://github.com/tolikhalas]
+[@tolikhalas](https://github.com/tolikhalas)
 
