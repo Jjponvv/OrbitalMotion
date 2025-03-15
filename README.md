@@ -52,7 +52,7 @@ This is a common method for drawing objects in pygame but using SCALE to make th
 This program can draw a circular object of any color, any radius, any position (x, y), and any mass.
 
 This is what it looks like in the example:  
-### "Model of sun" ⏤ Object_(WIDTH / 2, HEIGHT / 2, 30, pg.Color('Yellow'), 1.989e30)  
+### "Model of sun" ⏤ `Object_(WIDTH / 2, HEIGHT / 2, 30, pg.Color('Yellow'), 1.989e30)` 
 ### Where:  
 **WIDTH / 2, HEIGHT / 2** ⏤ x, y cordinate  
 **30** ⏤ radius  
