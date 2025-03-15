@@ -13,7 +13,7 @@ G = 0.000000000066743
 SCALE = 1000000000
 TIMESTEP = 3600 * 24
 
-class PhysObject:
+class Object_:
     def __init__(self, x, y, radius, color, mass):
         self.x = x
         self.y = y
@@ -52,8 +52,8 @@ class PhysObject:
         self.x += self.vx * TIMESTEP
         self.y += self.vy * TIMESTEP
 
-sun = PhysObject(WIDTH / 2, HEIGHT / 2, 30, pg.Color('Yellow'), 1.989e30)
-earth = PhysObject(WIDTH / 2 + 150 * SCALE, HEIGHT / 2 + 50 * SCALE, 20, (0, 255, 0), 5.972e24)
+sun = Object_(WIDTH / 2, HEIGHT / 2, 30, pg.Color('Yellow'), 1.989e30)
+earth = Object_(WIDTH / 2 + 150 * SCALE, HEIGHT / 2 + 50 * SCALE, 20, (0, 255, 0), 5.972e24)
 earth.vy = 29_783
 
 objects = [sun, earth]
