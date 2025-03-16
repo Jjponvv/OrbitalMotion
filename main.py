@@ -11,7 +11,7 @@ sc = pg.display.set_mode(RES)
 
 G = 0.000000000066743
 SCALE = 1000000000
-TIMESTEP = 3600 * 24
+TIMESTEP = 3600
 
 class Object_:
     def __init__(self, x, y, radius, color, mass):
@@ -52,9 +52,9 @@ class Object_:
         self.x += self.vx * TIMESTEP
         self.y += self.vy * TIMESTEP
 
-sun = Object_(WIDTH / 2, HEIGHT / 2, 30, pg.Color('Yellow'), 1.989e30)
-earth = Object_(WIDTH / 2 + 150 * SCALE, HEIGHT / 2 + 50 * SCALE, 20, (0, 255, 0), 5.972e24)
-earth.vy = 29_783
+sun = Object_(WIDTH / 2, HEIGHT / 2, 60, pg.Color('Yellow'), 1.989e30)
+earth = Object_(WIDTH / 2 + 128.781668823 * SCALE, HEIGHT / 2 + 82.781668823 * SCALE, 10, (0, 255, 0), 5.972e24)
+earth.vy = 29783
 
 objects = [sun, earth]
 
