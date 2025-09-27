@@ -11,7 +11,7 @@ sc = pg.display.set_mode(RES)
 
 #set nesesery constants
 G = 0.000000000066743
-SCALE = 5e7
+SCALE = 655000000
 TIMESTEP = 3600*24*30/60
 
 start_date = datetime.datetime(2025, 1, 1)
