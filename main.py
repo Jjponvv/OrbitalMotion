@@ -11,8 +11,20 @@ sc = pg.display.set_mode(RES)
 
 #set nesesery constants
 G = 0.000000000066743
-SCALE = 1000000000
-TIMESTEP = 3600
+SCALE = 5e7
+TIMESTEP = 60*15
+
+camera_x, camera_y = 0, 0
+
+def world_to_screen(x, y):
+    sx = int((x - camera_x) / SCALE + WIDTH/2)
+    sy = int((y - camera_y) / SCALE + HEIGHT/2)
+    return sx, sy
+
+def screen_to_world(sx, sy):
+    x = (sx - WIDTH/2) * SCALE + camera_x
+    y = (sy - HEIGHT/2) * SCALE + camera_y
+    return x, y
 
 #main class
 class Object_:
